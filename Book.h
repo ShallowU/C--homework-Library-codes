@@ -1,17 +1,17 @@
 #ifndef BOOK_H
-#define BOOK_H	//ÊÔÊÔgitĞŞ¸Ä
+#define BOOK_H	
 #include <string>	
 using namespace std;
 class Book
 {
 private:
-	string m_name;		//Êé¼®Ãû 
-	string m_isbn;		//Êé¼®isbnºÅ 
-	string m_pressInfo; //Êé¼®³ö°æÉç 
-	double m_price;		//Êé¼®¼Û¸ñ 
-	int m_page;			//Êé¼®×ÜÒ³Êı 
-	string m_author;	//Êé¼®×÷Õß 
-	int m_num;			//Êé¼®ÊıÁ¿ 
+	string m_name;		//ä¹¦ç±å 
+	string m_isbn;		//ä¹¦ç±isbnå· 
+	string m_pressInfo; //ä¹¦ç±å‡ºç‰ˆç¤¾ 
+	double m_price;		//ä¹¦ç±ä»·æ ¼ 
+	int m_page;			//ä¹¦ç±æ€»é¡µæ•° 
+	string m_author;	//ä¹¦ç±ä½œè€… 
+	int m_num;			//ä¹¦ç±æ•°é‡ 
 	//int borrowtime;
 public:
 	Book(string m_name, string m_isbn,string m_pressInfo,double m_price,string m_author,int m_num)
@@ -32,10 +32,10 @@ public:
 	int getPage();
 	void setAuthor(string author);
 	string getAuthor();
-	void checkIsnb();	//¼ì²éisbnºÅ 
-	bool isBorrowed();	//ÊÇ·ñ±»½è×ß×´Ì¬ 
-	void showInfo();	//Õ¹Ê¾¸ÃÊé¼®µÄÏà¹ØĞÅÏ¢ 
-	friend std::ostream& operator <<(std::ostream& os, const Book& book);	//ÖØÔØ<< 
-	friend std::istream& operator >>(std::istream& is,  Book& book);	//ÖØÔØ>> 
+	void checkIsnb();	//æ£€æŸ¥isbnå· 
+	bool isBorrowed();	//æ˜¯å¦è¢«å€Ÿèµ°çŠ¶æ€ 
+	void showInfo();	//å±•ç¤ºè¯¥ä¹¦ç±çš„ç›¸å…³ä¿¡æ¯ 
+	friend std::ostream& operator <<(std::ostream& os, const Book& book);	//é‡è½½<< 
+	friend std::istream& operator >>(std::istream& is,  Book& book);	//é‡è½½>> 
 };
 #endif
