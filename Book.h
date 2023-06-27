@@ -1,6 +1,6 @@
 #ifndef BOOK_H
-#define BOOK_H
-#include <string>
+#define BOOK_H	//ÊÔÊÔgitĞŞ¸Ä
+#include <string>	
 using namespace std;
 class Book
 {
